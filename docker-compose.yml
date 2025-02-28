@@ -3,10 +3,10 @@
 version: '3.8'
 
 services:
-  tests: # name of service
+  tests: # Name of service
     build: . # Uses the Dockerfile in the current directory (.) to build the image.
     command: pytest tests/ # Runs pytest inside the container to execute all tests in the tests/ directory
     volumes:
       - .:/app # Mounts the current directory (.) to /app inside the container.
     environment:
-      - PYTHONPATH=/app # ensures Python can find the modules in /app.
+      - PYTHONPATH=/app # Ensures Python can find the modules in /app.
