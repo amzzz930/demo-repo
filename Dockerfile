@@ -13,6 +13,3 @@ RUN pip install -r requirements.txt
 
 # Set the PYTHONPATH so the utils module can be found
 ENV PYTHONPATH=/app
-
-# Default command to run pytest
-CMD ["pytest"]
